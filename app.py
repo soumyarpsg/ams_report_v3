@@ -816,12 +816,13 @@ def render_diamond_liquor_section(fdf: pd.DataFrame) -> None:
     """Liquor purchase + redemption snapshot for Diamond members."""
     st.markdown("---")
     st.markdown(
-        '<div style="background:linear-gradient(90deg,#1F1F2E 0%,#3A2A4D 100%);'
-        'padding:0.75rem 1.25rem;border-radius:8px;color:#fff;margin-bottom:1rem;">'
-        '<span style="font-size:1.15rem;font-weight:700;">🥂 Diamond Liquor — Purchase & Redemption</span>'
-        '<div style="opacity:0.8;font-size:0.85rem;margin-top:0.2rem;">'
+        '<div style="position:relative;background:linear-gradient(100deg,#FFF7DD 0%,#F3EEDF 55%,#EAF0F4 100%);'
+        'padding:0.85rem 1.25rem;border-radius:12px;color:#2A2410;margin-bottom:1rem;'
+        'border:1px solid #E4DBC2;box-shadow:0 6px 18px -12px rgba(156,122,24,0.5);">'
+        '<span style="font-size:1.15rem;font-weight:800;color:#9C7A18;">🥂 Diamond Liquor — Purchase &amp; Redemption</span>'
+        '<div style="color:#6B6552;font-size:0.85rem;margin-top:0.25rem;">'
         'Liquor cashback &amp; redemption are exclusive to Diamond members. '
-        '"Existing Liq Buyer" = found in the 1-year liquor-buyers base; otherwise "New Liq Buyer".'
+        '&quot;Existing Liq Buyer&quot; = found in the 1-year liquor-buyers base; otherwise &quot;New Liq Buyer&quot;.'
         '</div></div>',
         unsafe_allow_html=True,
     )
@@ -874,7 +875,7 @@ def render_diamond_liquor_section(fdf: pd.DataFrame) -> None:
                      title="Diamond members — existing vs new liquor buyers",
                      color="Type",
                      color_discrete_map={"Existing Liq Buyer": GOLD,
-                                         "New Liq Buyer": "#1F1F2E"},
+                                         "New Liq Buyer": SILVER},
                      hole=0.45)
         fig.update_layout(margin=dict(l=10, r=10, t=40, b=10), height=320)
         st.plotly_chart(fig, use_container_width=True)
