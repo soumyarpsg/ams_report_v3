@@ -13,8 +13,8 @@ LOYALTY_START_YEAR = 2025
 LOYALTY_START_MONTH = 7  # July 2025
 
 # Default admin credentials (change after first login via the UI)
-DEFAULT_ADMIN_USERNAME = "admin"
-DEFAULT_ADMIN_PASSWORD = "spencers@2026"
+DEFAULT_ADMIN_USERNAME = "soumya.mukherjee1@rpsg.in"
+DEFAULT_ADMIN_PASSWORD = "marketingdatateam"
 
 # Mobile numbers to ignore
 INVALID_MOBILES = {"0", "9999999999"}
